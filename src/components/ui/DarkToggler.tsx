@@ -23,7 +23,7 @@ export default function DarkToggler() {
   };
 
   return (
-    <div className="fixed z-10 bottom-10 right-10">
+    <div className="fixed z-10 bottom-6 right-6">
       <button
         onClick={toggleTheme}
         aria-live="polite"

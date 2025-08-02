@@ -18,9 +18,9 @@ export default function Home() {
 
       <DarkToggler />
 
-      <footer className="fixed bottom-4 inset-x-0 text-center text-gray-500 dark:text-gray-400">
+      {/* <footer className="fixed bottom-4 inset-x-0 text-center text-gray-500 dark:text-gray-400">
         Made with ❤️ by SuccessByte (Ehsanullah)
-      </footer>
+      </footer> */}
     </main>
   );
 }
