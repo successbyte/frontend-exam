@@ -18,14 +18,16 @@ export function FAQ({ accordionData, defaultValue }: FAQProps) {
       type="single"
       collapsible
       defaultValue={defaultValue}
-      className="w-full space-y-2"
+      className="w-full "
     >
       {accordionData.map((item) => (
         <AccordionItem key={item.id} value={item.id}>
-          <AccordionTrigger className="p-4 bg-gray-100 dark:bg-gray-800">
+          {/* I do not want the text to be underlined when hover */}
+          <AccordionTrigger className="py-2 pr-2 text-left focus:outline-none">
             {item.title}
           </AccordionTrigger>
-          <AccordionContent className="p-4 dark:text-gray-200">
+          {/* I want the description text to get the entire line and pretty */}
+          <AccordionContent className="py-2 pr-6 md:pr-10 dark:text-gray-200 text-pretty">
             {item.description}
           </AccordionContent>
         </AccordionItem>
