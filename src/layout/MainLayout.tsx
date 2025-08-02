@@ -1,13 +1,11 @@
-import React from "react";
+import * as React from "react";
+import { accordionData } from "@/data/accordionData";
+import { FAQ } from "@/components/ui/FAQ";
 
-function MainLayout() {
+export default function Home() {
   return (
-    <div>
-      <main>
-        <h1 className="bg-red-500">Main Layout</h1>
-      </main>
-    </div>
+    <main className="max-w-lg mx-auto p-4">
+      <FAQ accordionData={accordionData} defaultValue="1" />
+    </main>
   );
 }
-
-export default MainLayout;
